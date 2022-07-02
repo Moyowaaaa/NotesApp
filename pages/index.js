@@ -140,7 +140,7 @@ export default function Home() {
 
       </div>
 
-      <div className='w-full lg:w-5/12  flex flex-col flex flex-col items-center mt-2 lg:mt-[4rem]'> 
+      {/* <div className='w-full lg:w-5/12  flex flex-col justify-center items-center mt-2 lg:mt-[4rem]'> 
       <div className='flex items-center justify-between px-2 lg:pt-4 lg:pb-2'>
    
    
@@ -151,7 +151,7 @@ export default function Home() {
 
 
 
-      <div className='h-full flex flex-col mt-[4rem] w-full items-center' >
+      <div className='h-full border-2 border-[green]  flex flex-col mt-[4rem] w-full items-center' >
       {dataTodos && dataTodos.todos?.map(todo => (
         <TodoList key={todo.id} todo={todo}/>
       )).reverse()}
@@ -160,12 +160,24 @@ export default function Home() {
 
       </div>
 
-      </div>
+      </div> */}
 
+     
+
+<div className='hidden w-screen lg:flex flex-col items-center mb-12  '>
+<Link href='/todo'><p className='cursor-pointer hover:underline hover:decoration-[blue] pt-[2rem] text-2xl'>Todos</p></Link>
     
+
+<div className='h-full   flex flex-col mt-[4rem] w-full items-center' >
+{dataTodos && dataTodos.todos?.map(todo => (
+        <TodoList key={todo.id} todo={todo}/>
+      )).reverse()}
+  </div>
+</div>
      
 
        </div>
+       
 
         
 

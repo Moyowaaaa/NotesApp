@@ -19,15 +19,18 @@ const TodoCard = ({todo}) => {
   return (
     <div>
 
-        <div className='w-[20rem] lg:w-[30rem] my-2 bg-[blue] text-white h-[4.2rem] items-center py-2 px-6 flex justify-between'>
+ 
+        <div className='h-[3.2rem] w-12/12 py-2 px-4 mb-3 items-center flex text-white justify-between bg-[blue] '>
             <div>
             <p>{todo.text}</p>
             </div>
 
 
             <div onClick={deleteTodo}>
+                <div>
             <FontAwesomeIcon icon={faTrash}  width={15} className="text-[red] cursor-pointer" />
             </div>
+        </div>
         </div>
 
     </div>
