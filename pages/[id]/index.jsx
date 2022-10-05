@@ -71,9 +71,7 @@ const Note = () => {
     
 
 
-  
-  // if(loading) return <p>Loading...</p>
-  // if(error) return <p>Error :</p>
+
 
     //data check 
 
@@ -180,15 +178,7 @@ const Note = () => {
 
       
 
-        {/* <NoteForm note={data.note.body} editNote={editNote}/> */}
 
-
-{/* 
-        <NoteForm
-       body={data.note.body}
-        action={editNote}
-        /> */}
-        
       </div>
 
       </div>
