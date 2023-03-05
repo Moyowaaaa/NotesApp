@@ -17,7 +17,8 @@ const cache = new InMemoryCache({
 
 
 const client = new ApolloClient({
-  uri:'https://broken-floor-production.up.railway.app/graphql',
+  // uri:'https://broken-floor-production.up.railway.app/graphql',
+  uri:'https://notes-app-backend-production.up.railway.app/graphql',
   cache,
 });
 
